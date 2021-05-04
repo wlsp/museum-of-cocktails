@@ -93,7 +93,7 @@
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8 negro mb-5 mb-md-0">
               <h2>NEGRO Y AZUL</h2>
-              <img id="shaker"
+              <img id="shaker" onmouseover="PlaySound( 'shaking') " onmouseout="StopSound( 'shaking') "
                 src="assets/img/shaker.png"
                 alt=""
                 class="d-none d-lg-inline"
@@ -115,7 +115,7 @@
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8 negro mb-5 mb-md-0">
               <h2>OLD FASHIONED</h2>
-              <img id="shaker"
+              <img id="shaker" onmouseover="PlaySound( 'shaking') " onmouseout="StopSound( 'shaking') "
                 src="assets/img/shaker.png"
                 alt=""
                 class="d-none d-lg-inline"
@@ -152,7 +152,7 @@
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8 negro mb-5 mb-md-0">
               <h2>NEGRONI</h2>
-              <img id="shaker"
+              <img id="shaker" onmouseover="PlaySound( 'shaking') " onmouseout="StopSound( 'shaking') "
                 src="assets/img/shaker.png"
                 alt=""
                 class="d-none d-lg-inline"
@@ -173,7 +173,7 @@
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8 negro mb-5 mb-md-0">
               <h2>Lord Grey‘s Fizz</h2>
-              <img id="shaker"
+              <img id="shaker" onmouseover="PlaySound( 'shaking') " onmouseout="StopSound( 'shaking') "
                 src="assets/img/shaker.png"
                 alt=""
                 class="d-none d-lg-inline"
@@ -200,7 +200,7 @@
     <section class="container-fluid px-0">
       <div class="row align-items-center content">
         <div class="col-md-6 order-2 order-md-1" style="overflow: hidden;">
-          <video src="assets/img/smoked.mov" autoplay controls width="100%" >
+          <video src="assets/img/smoked.mov" autoplay muted controls width="100%" >
             <div>
               Schade – hier käme ein Video, wenn Ihr Browser HTML5 Unterstützung
               hätte, wie z.B. der aktuelle Firefox
@@ -211,11 +211,12 @@
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8 negro mb-5 mb-md-0">
               <h2>COHIBA-SMOKED<br />RUM OLD FASHIONED</h2>
-              <img id="shaker"
+              <img id="shaker" onmouseover="PlaySound( 'shaking') " onmouseout="StopSound( 'shaking') "
                 src="assets/img/shaker.png"
                 alt=""
                 class="d-none d-lg-inline"
               />
+              <p>Hover Over Me To Play</p>
               <p class="lead">
                 1 oz. Havana Club 7 Años<br />
                 3 drops Essenca of Cuba<br />
@@ -228,6 +229,22 @@
           </div>
         </div>
       </div>
+
+      
+      <audio id='shaking' src='assets/audio/newShaking.mp3' />
+    
+        <script type="text/javascript ">
+          function PlaySound(soundobj) {
+            var thissound = document.getElementById(soundobj);
+            thissound.play();
+          }
+    
+          function StopSound(soundobj) {
+            var thissound = document.getElementById(soundobj);
+            thissound.pause();
+            thissound.currentTime = 0;
+          }
+        </script>
     </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

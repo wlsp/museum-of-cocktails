@@ -62,7 +62,7 @@ h1:hover {
 }
 
 img#shaker:hover {
-    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 1.25s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -92,6 +92,10 @@ img#shaker:hover {
     #headingGroup h1 {
         font-weight: 100;
         font-size: 2.5rem;
+    }
+
+    img#shaker {
+        display:inline-block !important;
     }
 }
 
