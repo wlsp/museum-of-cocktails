@@ -1,0 +1,97 @@
+body {
+    background: #e8e8e4;
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    transition: transform .9s;
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
+
+
+.negro h2 {
+    color: #ea1c2c;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.negro p {
+    color:black;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+#mainNavbar .nav-link:hover {
+    color:#ea1c2c;
+}
+
+#mainNavbar .navbar-brand {
+    color:#ea1c2c;
+}
+
+#headingGroup span {
+    color:#ea1c2c;
+}
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+.navbar.scrolled {
+    background: #adb5bd;
+    transition: background 500ms;
+}
+
+img#shaker:hover {
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, -2px, -3px);
+    }
+    
+    20%, 80% {
+      transform: translate3d(1px, 4px, 3px)
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-1px, -2px, -3px);
+    }
+  
+    40%, 60% {
+      transform: translate3d(1px, 4px, 3px);
+    }
+  }
+
+
+@media (max-width:1400px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 2.5rem;
+    }
+}
+
